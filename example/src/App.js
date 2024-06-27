@@ -1,5 +1,5 @@
 import React from 'react'
-import Dojah from 'react-dojah'
+import Dojah from 'react-dojah-sdk'
 
 const App = () => {
   /**
@@ -8,7 +8,7 @@ const App = () => {
    * https://dojah.io/dashboard
    * to create an app and retrieve it)
    */
-  const appID = "5f772c87d30341003e0c8523";
+  const appID = "";
 
   /**
    *  This is your account public key
@@ -16,7 +16,7 @@ const App = () => {
    *  https://dojah.io/dashboard to
    *  retrieve it. You can also regenerate one)
    */
-  const publicKey = "test_pk_OvAQ5aAhwATSKPzOX5vB1Fbv8";
+  const publicKey = "";
 
   /**
    *  This is the widget type you'd like to load
@@ -24,7 +24,7 @@ const App = () => {
    *  https://dojah.io/dashboard to enable different
    *  widget types)
    */
-  const type = "link";
+  const type = "custom";
 
   /**
    *  These are the configuration options
@@ -37,22 +37,7 @@ const App = () => {
    *  available to the `verification` widget
    */
   const config = {
-    debug: true,
-    pages: [
-      {
-        page: 'government-data',
-        config: {
-          bvn: true,
-          nin: false,
-          dl: false,
-          mobile: false,
-          otp: false,
-          selfie: false,
-        },
-      },
-      { page: 'selfie' },
-      { page: 'id', config: { passport: false, dl: true } },
-    ],
+    widget_id: ""
   };
 
   /**
@@ -78,10 +63,10 @@ const App = () => {
   };
 
   const govData = {
-    bvn: "456789654323",
-    nin: "234567543233",
-    dl: "3243546768767453423",
-    mobile: "08034456679"
+    bvn: "",
+    nin: "",
+    dl: "",
+    mobile: ""
   }
 
   /**

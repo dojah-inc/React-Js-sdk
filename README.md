@@ -1,27 +1,27 @@
 # react-dojah
 
-> https://github.com/cjayprime/react-dojah
+> https://github.com/Yemmyfolayan/react-dojah
 
-[![NPM](https://img.shields.io/npm/v/react-dojah.svg)](https://www.npmjs.com/package/react-dojah) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-dojah.svg)](https://www.npmjs.com/package/react-dojah-sdk) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
 ## Install
 
 ```sh
-npm install react-dojah --save
+npm install react-dojah-sdk --save
 ```
 
 or with `yarn`
 
 ```sh
-yarn add react-dojah
+yarn add react-dojah-sdk
 ```
 
 ## Usage
 
 ```jsx
 import React from 'react'
-import Dojah from 'react-dojah'
+import Dojah from 'react-dojah-sdk'
 
 const App = () => {
   /**
@@ -30,7 +30,7 @@ const App = () => {
    * https://dojah.io/dashboard
    * to create an app and retrieve it)
    */
-  const appID = "5f772c87d30341003e0c8523";
+  const appID = "";
 
   /**
    *  This is your account public key
@@ -38,7 +38,7 @@ const App = () => {
    *  https://dojah.io/dashboard to
    *  retrieve it. You can also regenerate one)
    */
-  const publicKey = "test_pk_OvAQ5aAhwATSKPzOX5vB1Fbv8";
+  const publicKey = "";
 
   /**
    *  This is the widget type you'd like to load
@@ -46,7 +46,7 @@ const App = () => {
    *  https://dojah.io/dashboard to enable different
    *  widget types)
    */
-  const type = "link";
+  const type = "custom";
 
   /**
    *  These are the configuration options
@@ -59,22 +59,7 @@ const App = () => {
    *  available to the `verification` widget
    */
   const config = {
-    debug: true,
-    pages: [
-      {
-        page: 'government-data',
-        config: {
-          bvn: true,
-          nin: false,
-          dl: false,
-          mobile: false,
-          otp: false,
-          selfie: false,
-        },
-      },
-      {page: 'selfie'},
-      {page: 'id', config: {passport: false, dl: true}},
-    ],
+    widget_id: ""
   };
 
   /**
@@ -99,6 +84,13 @@ const App = () => {
     user_id: '121',
   };
 
+  const govData = {
+    bvn: "",
+    nin: "",
+    dl: "",
+    mobile: ""
+  }
+
   /**
    * @param {String} type
    * This method receives the type
@@ -109,11 +101,11 @@ const App = () => {
    */
   const response = (type, data) => {
     console.log(type, data);
-    if(type === 'success'){
-    }else if(type === 'error'){
-    }else if(type === 'close'){
-    }else if(type === 'begin'){
-    }else if(type === 'loading'){
+    if (type === 'success') {
+    } else if (type === 'error') {
+    } else if (type === 'close') {
+    } else if (type === 'begin') {
+    } else if (type === 'loading') {
     }
   }
 
@@ -128,6 +120,7 @@ const App = () => {
       config={config}
       userData={userData}
       metadata={metadata}
+      govData={govData}
     />
   );
 }
