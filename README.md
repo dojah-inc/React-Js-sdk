@@ -1,6 +1,6 @@
 # react-dojah
 
-> https://github.com/Yemmyfolayan/react-dojah
+> https://github.com/dojah-inc/React-Js-sdk
 
 [![NPM](https://img.shields.io/npm/v/react-dojah.svg)](https://www.npmjs.com/package/react-dojah-sdk) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 

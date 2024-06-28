@@ -2,15 +2,15 @@
   "name": "react-dojah-sdk",
   "version": "0.0.2",
   "description": "This is a react.js library for implementing the dojah connect gateway.",
-  "author": "Michael Folayan. <michaelfolayan@outlook.com>",
-  "repository": "git://github.com/Yemmyfolayan/react-dojah.git",
+  "author": "Chijioke & Michael",
+  "repository": "git://github.com/dojah-inc/React-Js-sdk.git",
   "bugs": {
-    "url": "https://github.com/Yemmyfolayan/react-dojah/issues"
+    "url": "https://github.com/dojah-inc/React-Js-sdk/issues"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "homepage": "https://github.com/Yemmyfolayan/react-dojah#readme",
+  "homepage": "https://github.com/dojah-inc/React-Js-sdk#readme",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
