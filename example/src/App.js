@@ -21,7 +21,7 @@ const App = () => {
   /**
    *  This is the widget type you'd like to load
    *  (go to your dashboard at
-   *  https://dojah.io/dashboard to enable different
+   *  https://app.dojah.io/dashboard to enable different
    *  widget types)
    */
   const type = "custom";
@@ -62,14 +62,14 @@ const App = () => {
     user_id: '121',
   };
 
-  const govData = {
-    bvn: "",
-    nin: "",
-    dl: "",
-    mobile: ""
-  }
+  // const govData = {
+  //   bvn: "",
+  //   nin: "",
+  //   dl: "",
+  //   mobile: ""
+  // }
 
-  const referenceId = "1234555666" //Unique reference Id
+  //const referenceId = "1234555666" //Unique reference Id
   /**
    * @param {String} type
    * This method receives the type
@@ -99,8 +99,8 @@ const App = () => {
       config={config}
       userData={userData}
       metadata={metadata}
-      govData={govData}
-      referenceId={referenceId}
+      //govData={govData}
+      //referenceId={referenceId}
     />
   );
 }
