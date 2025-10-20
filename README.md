@@ -1,4 +1,4 @@
-# react-dojah
+# dojah-kyc-sdk-react
 
 > https://github.com/dojah-inc/React-Js-sdk
 

@@ -37,7 +37,7 @@ const App = () => {
    *  available to the `verification` widget
    */
   const config = {
-    widget_id: ""
+    widget_id: "68c7d8c4bd774cbc0c0d5aef"
   };
 
   /**

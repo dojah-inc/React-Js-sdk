@@ -100,7 +100,7 @@ const App = () => {
    * The type can only be one of:
    * loading, begin, success, error, close
    * @param {String} data
-   * This is the data from doja
+   * This is the data from dojah
    */
   const response = (type, data) => {
     console.log(type, data);
