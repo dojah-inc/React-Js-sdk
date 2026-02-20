@@ -55,7 +55,6 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
 .idea
 .DS_Store
 .code
@@ -64,3 +63,4 @@ yarn.lock
 !example/yarn.lock
 
 dist
+config.bat
