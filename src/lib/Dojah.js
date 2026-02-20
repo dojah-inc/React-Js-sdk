@@ -23,8 +23,11 @@ class Dojah extends Component {
   }
 
   start = () => {
-    const { response } = this.props
-    let { uri } = Dojah.config
+    const { response, env } = this.props
+    let uri =
+      env === 'development'
+        ? 'https://dev-widget.dojah.services/widget.js'
+        : Dojah.config.uri
     if (window.dojah && window.dojah.uri) {
       uri = window.dojah.uri
     }
@@ -97,7 +100,8 @@ Dojah.propTypes = {
   appID: PropTypes.string.isRequired,
   publicKey: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  response: PropTypes.func.isRequired
+  response: PropTypes.func.isRequired,
+  env: PropTypes.string
 }
 
 export default Dojah
